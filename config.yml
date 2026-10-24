@@ -1,0 +1,30 @@
+# ---------------------------------------------------------------
+#  FlameKatana config
+#  Damage is in half-hearts: 8.0 = 4 hearts, 2.0 = 1 heart
+# ---------------------------------------------------------------
+
+# Day time (normal) settings
+slash:
+  damage: 8.0          # 4 hearts
+  cooldown: 3.0        # seconds between slashes
+  range: 10.0          # how far the flame wave travels (blocks)
+  radius: 2.5          # half-width of the crescent (blocks)
+  speed: 1.2           # blocks the wave moves every tick
+  fire-seconds: 4      # how long hit targets burn
+  knockback: 0.6       # push on hit (0 = none)
+
+# Night power. Everything here replaces the day values when it is night.
+night:
+  start-tick: 13000    # night begins (13000 = dusk)
+  end-tick: 23000      # night ends   (23000 = dawn)
+  damage-multiplier: 1.5   # 8.0 x 1.5 = 12.0 = 6 hearts
+  cooldown: 1.5
+  range: 16.0
+  radius: 3.5
+  fire-seconds: 8
+
+messages:
+  cooldown: "Flame Slash ready in %time%s"
+  slash-day: "Flame Slash!"
+  slash-night: "Night Flame Slash! (power boosted)"
+  no-permission: "You cannot use the Flame Katana."

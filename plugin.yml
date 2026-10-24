@@ -1,0 +1,20 @@
+name: FlameKatana
+version: 1.0.0
+main: com.flamekatana.FlameKatana
+api-version: '1.21'
+author: Claude
+description: A Flame Katana. Press F to fire a flame slash. Stronger at night.
+
+commands:
+  katana:
+    description: Give yourself the Flame Katana or reload the config
+    usage: /katana <give|reload> [player]
+    permission: flamekatana.admin
+
+permissions:
+  flamekatana.admin:
+    description: Allows /katana give and /katana reload
+    default: op
+  flamekatana.use:
+    description: Allows using the Flame Slash with the F key
+    default: true
